@@ -1,0 +1,1198 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <title>Magazine Ads - Magzter.com</title>
+
+    <link href="https://assets.magzter.com/public/publisher2/css/style.default.css" rel="stylesheet">
+    <link href="https://assets.magzter.com/public/publisher2/css/jquery.datatables.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://assets.magzter.com/public/publisher2/js/html5shiv.js"></script>
+    <script src="https://assets.magzter.com/public/publisher2/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="stickyheader">
+
+    <!-- Preloader -->
+  
+
+    <section>
+        <div class="leftpanel sticky-leftpanel">
+            <style>
+                .stickyheader .leftpanel {
+                    top: 50px;
+                }
+
+                .stickyheader .sticky-leftpanel {
+                    top: 0;
+                }
+
+                    .stickyheader .sticky-leftpanel .leftpanelinner {
+                        margin-top: 55px;
+                    }
+            </style>
+            <div class="logopanel">
+                <h1><span><img src="https://assets.magzter.com/public/v2.0/logos/magzterLogo.png" width="200" height="30"></span></h1>
+            </div><!-- logopanel -->
+
+            <div class="leftpanelinner">
+                <!-- This is only visible to small devices -->
+                <div class="visible-xs hidden-sm hidden-md hidden-lg">
+                    <div class="media userlogged">
+                        <div class="media-body">
+                            <h4>SB PUBLICATION</h4>
+                        </div>
+                    </div>
+
+                    <h5 class="sidebartitle actitle">Account</h5>
+                    <ul class="nav nav-pills nav-stacked nav-bracket mb30">
+                        <li><a href="https://publishers.magzter.com/edit_profile"><i class="fa fa-user"></i> <span>Profile</span></a></li>
+                        <li><a href="https://publishers.magzter.com/settings"><i class="fa fa-cog"></i> <span>Account Settings</span></a></li>
+                        <li><a href="#"><i class="fa fa-question-circle"></i> <span>Help</span></a></li>
+                        <li><a href="https://publishers.magzter.com/logout"><i class="fa fa-sign-out"></i> <span>Sign Out</span></a></li>
+                    </ul>
+                </div>
+
+                <h5 class="sidebartitle">Navigation</h5>
+                <ul class="nav nav-pills nav-stacked nav-bracket">
+                    <li><a href="https://publishers.magzter.com/"><i class="fa fa-home"></i> <span>Dashboard</span></a></li>
+                    <li class="nav-parent ">
+                        <a href="#"><i class="fa fa-book"></i> <span>Magazines</span></a>
+                        <ul class="children">
+                            <li><a href="https://publishers.magzter.com/magazines/add"><i class="fa fa-caret-right"></i>Add New Magazine </a></li>
+                            <li><a href="https://publishers.magzter.com/newspapers/add"><i class="fa fa-caret-right"></i>Add New Newspaper</a></li>
+                            <li><a href="https://publishers.magzter.com/magazines"><i class="fa fa-caret-right"></i>Manage magazines</a></li>
+                            <li><a href="https://publishers.magzter.com/magazines"><i class="fa fa-caret-right"></i>Manage Newspapers</a></li>
+                            <li><a href="javascript:;" data-toggle="modal" data-target="#myModal"><i class="fa fa-caret-right"></i>Differential Pricing</a></li>
+                            <!--<li><a href="coupon"><i class="fa fa-caret-right"></i>Manage Coupon code</a></li>-->
+                        </ul>
+                    </li>
+                    <li class="nav-parent ">
+                        <a href="#"><i class="fa fa-money"></i> <span>Coupon</span></a>
+                        <ul class="children">
+                            <!--<li><a href="coupon"><i class="fa fa-caret-right"></i>Discount Coupons</a></li>-->
+                            <li><a href="https://publishers.magzter.com/coupon/retailer_coupons"><i class="fa fa-caret-right"></i>Free Coupon</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-parent "><a href="#"><i class="fa fa-suitcase"></i> <span>Books</span></a>
+                      <ul class="children" >
+
+                                <li><a href="https://publishers.magzter.com/books/book_search"><i class="fa fa-caret-right"></i> Manage Books</a></li>
+                        <li><a href="https://publishers.magzter.com/books/sales_report"><i class="fa fa-caret-right"></i>Book Sales Report</a></li>
+                                  </ul>
+                    </li> -->
+                    <li class="nav-parent ">
+                        <a href="#"><i class="fa fa-group"></i> <span>Accounts</span></a>
+                        <ul class="children">
+                            <li><a href="https://publishers.magzter.com/subaccounts/"><i class="fa fa-caret-right"></i>Sub Accounts</a></li>
+                            <li style="display:block"><a href="https://publishers.magzter.com/licenseeaccounts/"><i class="fa fa-caret-right"></i>Licensee Accounts</a></li>
+
+
+                        </ul>
+                    </li>
+                    <li class="nav-parent ">
+                        <a href="#"><i class="fa fa-bar-chart-o"></i> <span>Reports</span></a>
+                        <ul class="children">
+
+                            <li><a href="https://publishers.magzter.com/sales"><i class="fa fa-signal"></i>Sales Report</a></li>
+
+                            <li><a href="https://publishers.magzter.com/download_report"><i class="fa fa-download"></i>Download Report</a></li>
+
+
+
+                        </ul>
+                    </li>
+                    <li class="nav-parent ">
+                        <a href="#"><i class="fa fa-bullhorn"></i> <span>Push Notifications</span></a>
+                        <ul class="children">
+                            <li><a href="https://publishers.magzter.com/createPush"><i class="fa fa-caret-right"></i>Create Push</a></li>
+                            <li><a href="https://publishers.magzter.com/createPush/manage"><i class="fa fa-caret-right"></i>Manage Push</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="https://publishers.magzter.com/offers"><i class="fa fa-dollar"></i> <span>Magzter Offers </span></a></li>
+                    <!-- <li><a href="https://publishers.magzter.com/offers/buy1_get1"><i class="fa fa-dollar"></i> <span>Buy 1 Get 1 Offer</span></a></li> -->
+                    <!--li data-target="#interactive_pages" data-toggle="modal" style="cursor:pointer"><a href="#"><i class="fa fa-html5"></i> <span></span></a></li-->
+                    <li><a href="https://publishers.magzter.com/complimentarycopies"><i class="fa fa-money"></i> <span>Complimentary Copies</span></a></li>
+                    <li><a href="https://publishers.magzter.com/settings/bank"><i class="fa fa-money"></i> <span>Update Bank Details </span></a></li>
+
+
+                    <li class="active">
+                        <a href="https://publishers.magzter.com/manageAds"><i class="fa fa-caret-right"></i>Manage Ad Magazines</a>
+                    </li>
+                    <!--<li><a href="coupon"><i class="fa fa-caret-right"></i>Manage Coupon code</a></li>-->
+
+                    <li class=""><a href="https://publishers.magzter.com/tutorials"><i class="fa fa-lightbulb-o"></i> Tutorials</a></li>
+
+                    <li class="nav-parent ">
+                        <a href="#"><i class="fa fa-bullhorn"></i> <span>Promotions</span></a>
+                        <ul class="children">
+                            <li><a href="https://publishers.magzter.com/promote"><i class="fa fa-caret-right"></i>Promote</a></li>
+                            <li><a href="https://publishers.magzter.com/newsstand_banner_v4"><i class="fa fa-caret-right"></i>Custom Banners</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li class=""><a href="https://publishers.magzter.com/promote"><i class="fa fa-bullhorn"></i> Promotions</a></li> -->
+                    <li class="nav-parent">
+                        <a href="#"><i class="fa fa-bar-chart-o"></i><span>Analytics</span></a>
+                        <ul class="children">
+                            <li>
+                                <a href="https://publishers.magzter.com/analytics/new/magzter_user_sessions_new.php?Module=SessionsNew
+" target="_blank"><i class="fa fa-bar-chart-o"></i>Reading Sessions</a>
+                            </li>
+                            <li>
+                                <a href="https://publishers.magzter.com/analytics/new/magzter_user_page_read.php?Module=Page_Reads
+" target="_blank"><i class="fa fa-bar-chart-o"></i>Page Reads</a>
+                            </li>
+                            <li><a href="https://publishers.magzter.com/analytics/new/magzter_user_events.php?Module=Events" target="_blank"><i class="fa fa-bar-chart-o"></i>Events</a></li>
+                        </ul>
+                    </li>
+
+
+
+
+
+                    <li><a href="mailto:magazine.support@magzter.com"><i class="fa fa-envelope-o"></i> <span>Help & Support</span></a></li>
+                </ul>
+
+            </div><!-- leftpanelinner -->
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">Differential Pricing</h4>
+                    </div>
+                    <div class="modal-body">
+                        <a class="btn btn-default btn-lg" href="https://publishers.magzter.com/differentialprice/issue">Single Issue</a>&nbsp;
+                        <a class="btn btn-primary btn-lg" href="https://publishers.magzter.com/differentialprice/subscription">Subscription</a>
+                    </div>
+                </div><!-- modal-content -->
+            </div><!-- modal-dialog -->
+        </div><!-- modal -->
+        <!-- Modal -->
+        <div class="modal fade" id="interactive_pages" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">Interactive Pages</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="panel panel-info panel-alt widget-today" data-target="#magfly_intro_one" data-toggle="modal" style="cursor:pointer">
+                                    <div class="panel-heading text-center">
+                                        <i class="fa fa-link"></i> <i class="fa fa-youtube-play"></i> <i class="fa fa-music"></i>
+                                    </div>
+                                    <div class="panel-body text-center">
+                                        <h3 class="today">MagEnhance</h3>
+                                        <p>Create an enhanced interactive version</p>
+                                    </div><!-- panel-body -->
+                                </div><!-- panel -->
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="panel panel-danger panel-alt widget-time">
+                                    <div class="panel-heading text-center">
+                                        <i class="fa fa-html5"></i><i class="fa fa-picture-o"></i><i class="fa fa-pencil-square-o"></i>
+                                    </div>
+                                    <div class="panel-body text-center">
+                                        <h3 class="today">MagCMS</h3>
+                                        <p>Create a fully interactive version<br /><span style="color:#428bca">Coming soon</span></p>
+                                    </div><!-- panel-body -->
+                                </div><!-- panel -->
+                            </div>
+                        </div> <!-- row ends -->
+                    </div>
+                </div><!-- modal-content -->
+            </div><!-- modal-dialog -->
+        </div><!-- modal -->
+        <!-- MagFly Intro Modal One-->
+        <div class="modal fade" id="magfly_intro_one" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">Dear Publisher</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md">
+                                <div class="panel panel-info panel-alt widget-today" style="margin-bottom:0px !improtant">
+                                    <div class="panel-body">
+                                        <h3 class="today" style="margin-bottom:10px;">Welcome to MagEnhance!</h3>
+                                        <p>Let your readers discover an all new experience with Magzter’s enhancement tool, MagEnhance.</p>
+                                        <p>Magzter promises you only the best technology and services and we deliver this time and again. With our newest creation MagEnhance, your magazines will literally come to life!</p>
+                                        <p><b>The MagEnhance tool lets you:</b></p>
+                                        <ul>
+                                            <li style="line-height:20px;">Create videos, audio and slide shows for pages.</li>
+                                            <li style="line-height:20px;">Include web links, shopping links, email addresses and page numbers.</li>
+                                            <li style="line-height:20px;">Include a variety of social sharing icons.</li>
+                                        </ul>
+                                    </div><!-- panel-body -->
+                                </div><!-- panel -->
+                                <p class="text-center" data-target="#magfly_intro_two" data-toggle="modal" style="cursor:pointer"><a id="popupnote1" style="text-decoration:none;" href="#"><span style="background-color: #0066CC; border-color: #17A08C; color: #FFF; border-radius: 3px; padding: 8px 18px;" name="mag_login">Continue</span></a></p>
+                            </div>
+                        </div> <!-- row ends -->
+                    </div>
+                </div><!-- modal-content -->
+            </div><!-- modal-dialog -->
+        </div><!--MagFly modal end-->
+        <!-- MagFly Intro Modal two-->
+        <div class="modal fade" id="magfly_intro_two" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">How MagEnhance tool works:</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md">
+                                <div class="panel panel-info panel-alt widget-today" style="margin-bottom:0px !improtant">
+                                    <div class="panel-body">
+                                        <h3 class="today" style="margin-bottom:10px;">Welcome to MagEnhance!</h3>
+                                        <ul>
+                                            <li style="line-height: 30px;">Under Manage Magazines -&gt; search for your magazine and click Go. You will reach the Magazine Listing page.</li>
+                                            <li style="line-height: 22px;margin-bottom: 10px;text-align: justify;">On the Magazine Listing page you will find the option -&gt; Request for MagEnhance. Click this button to enable MagEnhance features to the magazine you have selected. The MagEnhance conversion will take about 15 minutes.</li>
+                                            <li style="line-height: 22px;margin-bottom: 10px;text-align: justify;"> During this time, you will notice the following alert - Processing MagEnhance conversion. Upon completion of the same, you will see the button MagEnhance - Interactive Pages.</li>
+                                            <li style="line-height: 30px;">Click on "MagEnhance - Interactive Pages" to go to the MagEnhance tool.</li>
+                                        </ul><br>
+                                        <p>Make the most of MagEnhance today!</p>
+                                        <p>For any assistance, please email <a style="color:#0066CC" href="mailto:magazine.support@magzter.com?subject=Require MagEnhance assistance">magazine.support@magzter.com</a></p>
+                                    </div><!-- panel-body -->
+                                </div><!-- panel -->
+                                <p class="text-center"><a id="popupnote1" style="text-decoration:none;" href="https://publishers.magzter.com/magazines"><span style="background-color: #0066CC; border-color: #17A08C; color: #FFF; border-radius: 3px; padding: 8px 18px;" name="mag_login">Click here to get started</span></a></p>
+                            </div>
+                        </div> <!-- row ends -->
+                    </div>
+                </div><!-- modal-content -->
+            </div><!-- modal-dialog -->
+        </div><!--MagFly modal two end-->
+
+
+        <div class="mainpanel">
+            <style type="text/css">
+                .pricing-calc-meters li, .pricing-calc-meters {
+                    list-style-type: none;
+                    padding: 0;
+                    margin: 0;
+                }
+
+                    .pricing-calc-meters > li {
+                        padding: 0 0 20px;
+                        clear: both;
+                        margin: 0 0 20px;
+                    }
+
+                    .pricing-calc-meters li .pricing-calc-nav span {
+                        clear: both;
+                        display: block;
+                    }
+
+                    .pricing-calc-meters h3, .pricing-calc-meters h3 a {
+                        float: left;
+                        font-size: 24px;
+                        text-decoration: none;
+                    }
+
+                        .pricing-calc-meters h3 a:hover {
+                        }
+
+                .slider-tooltip p {
+                    -webkit-transition: all .2s ease-in-out;
+                    -moz-transition: all .2s ease-in-out;
+                    transition: all .2s ease-in-out;
+                }
+
+                .slider-tooltip {
+                    position: relative;
+                    display: inline-block;
+                    float: left;
+                    padding: 5px 5px 0;
+                    opacity: 100;
+                    z-index: 1003;
+                    cursor: pointer;
+                    visibility: visible;
+                    -webkit-transition: opacity .2s ease-in-out;
+                    -moz-transition: opacity .2s ease-in-out;
+                    -o-transition: opacity .2s ease-in-out;
+                    transition: opacity .2s ease-in-out;
+                }
+
+                .pricing-calc-meters li:hover .slider-tooltip {
+                    visibility: visible;
+                    opacity: .8;
+                }
+
+                    .pricing-calc-meters li:hover .slider-tooltip:hover {
+                        opacity: 1;
+                    }
+
+                .slider-tooltip p {
+                    padding: 10px;
+                    width: 500px;
+                    position: absolute;
+                    background: #454545;
+                    left: 30px;
+                    top: 10px;
+                    opacity: 0;
+                    color: #fff;
+                    z-index: 1003;
+                    display: none;
+                    cursor: auto;
+                    color: #fff;
+                }
+
+                .slider-tooltip:hover p {
+                    display: block;
+                    opacity: 1;
+                    right: -290px;
+                }
+
+                .ui-slider .ui-slider-handle {
+                    z-index: 1002;
+                }
+
+                .slider-tooltip:hover {
+                    z-index: 1003;
+                }
+
+                .slider-tooltip:after {
+                    content: "";
+                    display: none;
+                    border: 7px solid transparent;
+                    border-right-color: #454545;
+                    position: absolute;
+                    top: 7px;
+                    right: 0;
+                    opacity: .96;
+                }
+
+                .slider-pricing-group {
+                    display: block;
+                    padding: 20px 0 0;
+                }
+            </style>
+            <script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-46680689-6', 'magzter.com');
+		ga('send', 'pageview');
+            </script>
+            <script type="text/javascript">
+ var clevertap = {event:[], profile:[], account:[], onUserLogin:[], notifications:[]};
+ clevertap.account.push({"id": "4W5-5W6-5K5Z"});
+ (function () {
+		 var wzrk = document.createElement('script');
+		 wzrk.type = 'text/javascript';
+		 wzrk.async = true;
+		 wzrk.src = ('https:' == document.location.protocol ? 'https://d2r1yp2w7bby2u.cloudfront.net' : 'http://static.clevertap.com') + '/js/a.js';
+		 var s = document.getElementsByTagName('script')[0];
+		 s.parentNode.insertBefore(wzrk, s);
+	})();
+            </script>
+            <div class="headerbar">
+                <a class="menutoggle"><i class="fa fa-bars"></i></a>
+                <!--<form class="searchform" action="https://publishers.magzter.com/" method="post">
+                <input type="text" class="form-control" name="keyword" placeholder="Search here..." />
+                </form>-->
+                <div class="header-right">
+                    <ul class="headermenu">
+                        <!--<li>
+                            <div class="btn-group">
+                                <button class="btn btn-default dropdown-toggle tp-icon" data-toggle="dropdown">
+                                    <i class="glyphicon glyphicon-envelope"></i>
+                                    <span class="badge">1</span>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-head pull-right">
+                                    <h5 class="title">You Have 1 New Message</h5>
+                                    <ul class="dropdown-list gen-list">
+                                        <li class="new">
+                                            <a href="#">
+                                                <span class="desc">
+                                                    <span class="name">Magzter Support <span class="badge badge-success">new</span></span>
+                                                    <span class="msg">Lorem ipsum dolor sit amet...</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="desc">
+                                                    <span class="name">Magzter Support</span>
+                                                    <span class="msg">Lorem ipsum dolor sit amet...</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="new"><a href="#">Read All Messages</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>-->
+                        <li>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                    English						<span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-usermenu pull-right">
+                                    <li><a href="https://publishers.magzter.com/SwitchLang/language/english">English</a></li>
+                                    <li><a href="https://publishers.magzter.com/SwitchLang/language/spanish">Spanish</a></li>
+                                    <li><a href="https://publishers.magzter.com/SwitchLang/language/turkish">Turkish</a></li>
+                                    <li><a href="https://publishers.magzter.com/SwitchLang/language/german">German</a></li>
+                                    <li><a href="https://publishers.magzter.com/SwitchLang/language/finnish">Finnish</a></li>
+                                    <li><a href="https://publishers.magzter.com/SwitchLang/language/swedish">Swedish</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                    Hi ABINASH!
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-usermenu pull-right">
+                                    <li><a href="https://publishers.magzter.com/myprofile"><i class="glyphicon glyphicon-user"></i> Edit My Profile</a></li>
+                                    <li><a href="https://publishers.magzter.com/settings/bank"><i class="glyphicon glyphicon-cog"></i> Edit Bank Details</a></li>
+                                    <li><a href="https://publishers.magzter.com/myprofile/changepassword"><i class="fa  fa-wrench"></i>Change Password</a></li>
+                                    <li><a href="mailto:magazine.support@magzter.com"><i class="glyphicon glyphicon-question-sign"></i>Help</a></li>
+                                    <li><a href="https://publishers.magzter.com/logout"><i class="glyphicon glyphicon-log-out"></i> Logout</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div><!-- header-right -->
+            </div>
+            <div class="pageheader">
+                <h2>
+                    <i class="fa fa-home"></i>SB PUBLICATION
+                </h2>
+                <div class="breadcrumb-wrapper">
+                    <span class="label">You are here:</span>
+                    <ol class="breadcrumb">
+                        <li><a href="https://publishers.magzter.com/">Home</a></li>
+                        <li class="active">Magazines</li>
+                    </ol>
+                </div>
+            </div>
+
+            <style>
+                .help-block {
+                    font-size: 12px;
+                }
+
+                .add-mag {
+                    padding-top: 0px;
+                    font-weight: bold;
+                    border-bottom: 1px solid #CDCDCD;
+                    margin: 0px 15px 15px;
+                    line-height: 2.3;
+                }
+
+                    .add-mag h4 {
+                        width: 24px;
+                        height: 24px;
+                    }
+
+                .heading-td {
+                    padding-bottom: 20px;
+                    width: 65%;
+                    padding-top: 5px;
+                }
+
+                    .heading-td h4 {
+                        margin-top: 0px;
+                        margin-bottom: 0px;
+                        padding-top: 0px;
+                        font-weight: bold;
+                        border-bottom: 1px solid rgb(205, 205, 205);
+                        line-height: 2.5;
+                    }
+
+                        .heading-td h4 span {
+                            width: 24px;
+                            height: 24px;
+                            background: url(http://dbnxsh9dzt35p.cloudfront.net/common/mailer/img/mng-ad-icons.png");
+                        }
+
+                .search-td {
+                    padding-top: 13px;
+                }
+
+                    .search-td .search-box {
+                        float: right;
+                        border: 1px solid rgb(204, 204, 204);
+                        border-radius: 2px;
+                        padding: 8px 15px;
+                        width: 100%;
+                        max-width: 320px;
+                    }
+
+                .chosen-drop {
+                    position: relative !important;
+                }
+            </style>
+            <script type="text/javascript">
+function del_adv(advt_id){
+	var r = confirm("Are you sure to delete the Magazine");
+	if(r == true){
+             location.href="/manageAds/delAdv/"+advt_id;
+	} else {
+		return false;
+	}
+}
+            </script>
+            <style type="text/css">
+                .chosen-container-multi .chosen-choices {
+                    height: auto !important;
+                }
+
+                h3 {
+                    border-bottom: 1px solid #ECECEC;
+                    line-height: 2em;
+                    margin-bottom: 20px;
+                    margin-top: 0px;
+                }
+
+                .form-group {
+                    padding-bottom: 20px;
+                    padding-top: 0px;
+                    margin-bottom: 5px;
+                }
+
+                label {
+                    font-weight: bold;
+                    margin-bottom: 5px !important;
+                    color: #4A535E;
+                    text-align: right;
+                    max-width: 200px;
+                    font-size: 12px;
+                }
+
+                .chosen-container-multi .chosen-choices li.search-field input[type="text"] {
+                    color: #B9B9B9;
+                    padding: 10px;
+                }
+
+                .ad-date-wrap {
+                    margin-top: 15px;
+                    background: #F2F2F2 none repeat scroll 0% 0%;
+                    padding: 15px;
+                    border: 1px solid #EAEAEA;
+                }
+            </style>
+            <div class="contentpanel">
+
+                <div class="panel panel-default">
+                    <!--<div class="panel-heading">
+                    </div>-->
+                    <div class="panel-body panel-body-nopadding">
+
+
+                        <div class="alert alert-warning" style="display:none">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                        </div>
+
+                        <div class="alert alert-success" style="display:none;">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                        </div>
+
+                        <form class="form-horizontal form-bordered" method="post" id="add_ads_form" name="add_ads_form" action="https://publishers.magzter.com/manageAds">
+                            <h4 class="add-mag"><span></span> Add Magazine</h4>
+
+                            <div class="form-group" style="padding-bottom:0;border:0;">
+
+                                <label class="col-sm-2 control-label" for="magazinename" style="width:12%;">Magazine Name</label>
+                                <div class="col-sm-10" style="width:87%;">
+                                    <select class="form-control chosen-select" id="magazinename" name="magazinename[]" required multiple="true" size=30></select>
+                                    <span class="help-block">You can select multiple magazines</span>
+                                </div>
+                            </div>
+
+
+                            <div class="panel-footer" style="border:0;padding-top:0;">
+                                <div class="row" style="text-align:right;">
+                                    <div class="col-sm-9 col-sm-offset-3">
+                                        <button class="btn btn-primary" id="add_ads" name="add_ads">Submit</button>&nbsp;
+
+                                        <a href="/manageAds" class="btn btn-default">Cancel</a>
+
+                                    </div>
+                                </div>
+                            </div><!-- panel-footer -->
+                        </form>
+                    </div><!-- panel-body -->
+
+                </div><!-- panel -->
+
+
+
+                <div class="table-responsive dashboard-datatable">
+                    <table class="table magztertable" id="table1">
+
+                        <thead>
+
+                            <tr>
+                                <th>Magazine Name</th>
+                                <th style="text-align:right;padding-right:35px;">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div><!-- table-responsive -->
+
+            </div>
+        </div><!-- mainpanel -->
+    </section>
+    <style>
+        .status_btn {
+            border-radius: 3px;
+            line-height: 15px;
+            padding: 5px 8px;
+            transition: all 0.2s ease-out 0s;
+        }
+
+        #cboxTitle {
+            font-weight: bold;
+            color: #000;
+        }
+
+        #pntge {
+            font-weight: bold;
+            color: #FF0000;
+        }
+    </style>
+    <link rel="stylesheet" href="https://akcdn.magzter.com/web/srz/assets/css/fonts.css">
+
+    <script type="text/javascript">
+var base_domain = 'https://publishers.magzter.com/';
+    </script>
+    <script src="https://assets.magzter.com/public/publisher2/js/jquery-1.10.2.min.js"></script>
+    <script src="https://assets.magzter.com/public/publisher2/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://assets.magzter.com/public/publisher2/js/jquery-ui-1.10.3.min.js"></script>
+
+    <script src="https://assets.magzter.com/public/publisher2/js/bootstrap.min.js"></script>
+    <script src="https://assets.magzter.com/public/publisher2/js/modernizr.min.js"></script>
+    <script src="https://assets.magzter.com/public/publisher2/js/jquery.sparkline.min.js"></script>
+    <script src="https://assets.magzter.com/public/publisher2/js/toggles.min.js"></script>
+    <script src="https://assets.magzter.com/public/publisher2/js/retina.min.js"></script>
+    <script src="https://assets.magzter.com/public/publisher2/js/jquery.cookies.js"></script>
+
+    <script src="https://assets.magzter.com/public/publisher2/js/flot/flot.min.js"></script>
+    <script src="https://assets.magzter.com/public/publisher2/js/flot/flot.resize.min.js"></script>
+    <script src="https://assets.magzter.com/public/publisher2/js/morris.min.js"></script>
+    <script src="https://assets.magzter.com/public/publisher2/js/raphael-2.1.0.min.js"></script>
+
+    <script src="https://assets.magzter.com/public/publisher2/js/jquery.datatables.min.js"></script>
+    <script src="https://assets.magzter.com/public/publisher2/js/jquery.dataTables.columnFilter.js"></script>
+    <script src="https://assets.magzter.com/public/publisher2/js/chosen.jquery.min.js"></script>
+    <script src="https://assets.magzter.com/public/publisher2/js/jquery.colorbox-min.js"></script>
+    <link href="https://assets.magzter.com/public/publisher2/css/colorbox.css" rel="stylesheet">
+    <script src="https://assets.magzter.com/public/publisher2/js/jquery.validate.min.js"></script>
+    <script>
+jQuery(document).ready(function(){
+
+   // Chosen Select
+  jQuery(".chosen-select").chosen({'width':'100%','white-space':'nowrap'});
+  jQuery(".chosen-two-multiple").chosen({'max_selected_options': 2,'width':'100%','white-space':'nowrap'});
+  jQuery(".chosen-three-multiple").chosen({'max_selected_options': 3,'width':'100%','white-space':'nowrap'});
+  // Basic Form
+  jQuery("#validateForm").validate({
+    highlight: function(element) {
+      jQuery(element).closest('.form-group').removeClass('has-success').addClass('has-error');
+    },
+    success: function(element) {
+      jQuery(element).closest('.form-group').removeClass('has-error');
+    }
+  });
+
+  jQuery("#newvalidateForm").validate({
+	 errorLabelContainer: jQuery("#newvalidateForm div.error")
+  });
+
+  jQuery("#diff_issue_form").validate({
+    highlight: function(element) {
+      jQuery(element).closest('.form-group').removeClass('has-success').addClass('has-error');
+    },
+    success: function(element) {
+      jQuery(element).closest('.form-group').removeClass('has-error');
+    }
+  });
+
+jQuery("#add_issue_form").validate({
+    highlight: function(element) {
+      jQuery(element).closest('.form-group').removeClass('has-success').addClass('has-error');
+    },
+    success: function(element) {
+      jQuery(element).closest('.form-group').removeClass('has-error');
+    }
+  });
+
+
+jQuery("#add_promotion_form").validate({
+    highlight: function(element) {
+      jQuery(element).closest('.form-group').removeClass('has-success').addClass('has-error');
+    },
+    success: function(element) {
+      jQuery(element).closest('.form-group').removeClass('has-error');
+    }
+});
+
+
+jQuery("#myprofile_form").validate({
+    highlight: function(element) {
+      jQuery(element).closest('.form-group').removeClass('has-success').addClass('has-error');
+    },
+    success: function(element) {
+      jQuery(element).closest('.form-group').removeClass('has-error');
+    }
+  });
+
+ // Setup form validation on the #register-form element
+    $("#myprofile_form").validate({
+        // Specify the validation rules
+        rules: {
+            first_name: {
+		    required: true,
+		    chars:true,
+	    },
+            last_name: {
+		    required: true,
+		    chars:true,
+	    },
+            email: {
+                required: true,
+                email: true,
+            },
+
+        },
+
+        // Specify the validation error messages
+        messages: {
+            first_name: {
+		    required: "Please enter your first name",
+		    chars: "Please enter valid name"
+	    },
+            last_name: {
+		    required: "Please enter your first name",
+		    chars: "Please enter valid name"
+	    },
+            email: {
+		    required: "Please enter a valid email address",
+		    email: "Please enter valid email"
+	    }
+        },
+
+        submitHandler: function(form) {
+        	if (jQuery('#csv_upld').val() == 1 && jQuery('#hdn_val').val() == 0) {
+        		alert('Please upload CSV file');
+        		return false;
+        	}
+            form.submit();
+        }
+    });
+
+
+
+
+});
+    </script>
+    <script src="https://assets.magzter.com/public/publisher2/js/custom.js"></script>
+
+
+
+
+
+
+
+
+
+    <!--Added by Jegadeesh-->
+    <!--Added by Jegadeesh-->
+
+
+
+
+
+
+
+    <style type="text/css">
+        .ui-state-disabled {
+            color: #888;
+            /*display: none;*/
+            visibility: hidden;
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://assets.magzter.com/public/publisher2/js/jquery-ui-timepicker-addon.js"></script>
+    <script src="https://assets.magzter.com/public/publisher2/js/jquery-ui-sliderAccess.js"></script>
+    <link href="https://assets.magzter.com/public/publisher2/css/jquery-ui-timepicker-addon.css" rel="stylesheet">
+    <script type="text/javascript">
+ $(document).ready(function(){
+    $('#promo_exists').hide();
+    jQuery('#start_date').datetimepicker({
+	   dateFormat: "dd-mm-yy"
+    });
+
+    jQuery('#end_date').datetimepicker({
+	   dateFormat: "dd-mm-yy"
+    });
+
+    $('#start_date').datepicker({ dateFormat: "dd-mm-yy"});
+    $('#end_date').datepicker({ dateFormat: "dd-mm-yy"});
+
+    $('#promo_type').change(function(){
+         $("#price_magazines_one,#price_magazines_two,#price_magazines_three,#price_magazines_five").attr('readonly',false);
+         var promo_types=$('#promo_type').val();
+         $('.promo_rate_cls').hide();
+	 $('#free_subscription_label').hide();
+	 $('#free_magazine_lbl').hide();
+
+         $('.currency_mags').show();
+
+      	 if(promo_types==2){
+           $('#num_months_label').show();
+           $('#subscription_label').hide();
+       	 }else{
+           $('#num_months_label').hide();
+           $('#subscription_label').show();
+       	 }
+
+         if(promo_types==3){
+		$('#free_subscription_label').show();
+		$('#free_magazine_lbl').show();
+         }
+         $('#promo_rate_span'+promo_types).show();
+
+    });
+
+    $('#currency_id').change(function(){
+       var currency_val=$('#currency_id').val();
+      	if(currency_val==2){
+      		$('.currency_val').text('(Malaysian Ringit (MYR))');
+        }else{
+      		$('.currency_val').text('(Singapore Dollars (SGD))');
+        }
+    });
+
+    $('#price_magazines_one').keyup(function(){
+        var promotion_mag_count=$(this).val();
+        var one_promotion_length=promotion_mag_count.length;
+        if(one_promotion_length=='0'){
+          $("#price_magazines_two,#price_magazines_three,#price_magazines_five").removeAttr('readonly');
+        }else{
+          $("#price_magazines_two,#price_magazines_three,#price_magazines_five").attr('readonly','true');
+        }
+    });
+
+    $("#price_magazines_two,#price_magazines_three,#price_magazines_five").keyup(function(){
+       $('#price_magazines_one').attr('readonly','true');
+    });
+
+
+	$('#magazinename').change(function(){
+         var length_dd=$('.search-choice').length;
+         if(length_dd<=2){
+          $("#price_magazines_three,#price_magazines_five").attr('readonly','true');
+         }else{
+          $("#price_magazines_three,#price_magazines_five").removeAttr('readonly');
+         }
+         if(length_dd<=3){
+          $("#price_magazines_five").attr('readonly','true');
+         }else{
+          $("#price_magazines_five").removeAttr('readonly');
+         }
+         if(length_dd<5){
+          $("#price_magazines_five").attr('readonly','true');
+         }else{
+          $("#price_magazines_five").removeAttr('readonly');
+         }
+
+	});
+
+    $('#prm_name').keyup(function(){
+       var promotion_name=$(this).val();
+       var promotion_length=promotion_name.length;
+       if(promotion_length>=5){
+		$.ajax({
+			url : "/promotions/promoNameExists/"+promotion_name,
+			type : "POST",
+			success : function(resp) {
+				if(resp=='1'){
+				   $('#promo_exists').show();
+                                   $('#promo_exists').html('<span style="color:red;">Promo name already exists</span>');
+				}else{
+				   $('#promo_exists').hide();
+                                   $('#promo_exists').html('');
+                                }
+			}
+		});
+       }
+    });
+
+
+	$('#prm_name').bind('keypress', function (event) {
+	    var regex = new RegExp("^[a-zA-Z0-9]+$");
+	    var key = String.fromCharCode(!event.charCode ? event.which : event.charCode);
+	    if (!regex.test(key)) {
+	       event.preventDefault();
+	       return false;
+	    }
+	});
+
+
+
+ });
+
+	function changePromoStatus(promo_name){
+		var r = confirm("Are you sure to make this promo active?");
+		if (r == true) {
+		   location.href="/promotions/changeStatus/"+promo_name;
+		} else {
+		   return false;
+		}
+	}
+    </script>
+
+
+    <!--<script src="https://assets.magzter.com/public/publisher2/js/lc_switch.js"></script>
+    <link href="https://assets.magzter.com/public/publisher2/css/lc_switch.css" rel="stylesheet">-->
+    <script src="https://magzterfiles.s3.amazonaws.com/public/publisher2/js/lc_switch.js"></script>
+    <link href="https://magzterfiles.s3.amazonaws.com/public/publisher2/css/lc_switch.css" rel="stylesheet">
+
+    <script type="text/javascript" charset="utf-8">
+
+$(document).ready(function(){
+	$('input').lc_switch();
+
+	$('body').delegate('.lcs_check', 'lcs-statuschange', function() {
+		var status = ($(this).is(':checked')) ? 'checked' : 'unchecked';
+		if(status=='checked'){ var rad_chk = '1'; } else { var rad_chk = '0'; }
+		var rad_name = $(this).attr('name');
+		 var cat_id_split = rad_name.split("_");
+		 var cat_id = cat_id_split[2];
+		 var mid=$("#mid").val();
+		  $("#loading_"+cat_id).show();
+		  $.ajax({
+			'url' : base_domain+'manageAds/saveKeyCat/'+mid+'/'+cat_id+'/'+rad_chk,
+			'type' : 'POST',
+			'success' : function(data) {
+				 $("#loading_"+cat_id).hide();
+			}
+		});
+	});
+
+	$(".chosen").chosen({width: "100%"});
+
+
+	$('.save_key_mag').click(function(){
+		$('#err').html("");
+	 	var mag_id=$(this).attr('id');
+		 $('#mag_id').val(mag_id);
+		 $('#popup_keys'+mag_id).show();
+       });
+
+	$('.save_key').click(function(){
+             var mag_id=$('#mag_id').val();
+	     var mag_key= $('#mag_key').val();
+		if(mag_key){
+		 mag_key = encodeURI(mag_key.trim());
+		}
+	     	 window.location.href=base_domain+"manageAds/addCampKeys/"+mag_key+"/"+mag_id;
+
+	});
+});
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <link href="https://assets.magzter.com/public/publisher2/css/jquery.gritter.css" rel="stylesheet">
+    <script src="https://assets.magzter.com/public/publisher2/js/jquery.gritter.min.js"></script>
+    <style type="text/css">
+        .filter_column {
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+    </style>
+    <script type="text/javascript">
+$(document).ready(function() {
+    jQuery('.magztertable').dataTable({
+      "iDisplayLength": 10,
+      "bLengthChange": false
+    }).columnFilter({
+    	    sPlaceHolder: "head:after",
+			aoColumns: [ { type: "text", sSelector:'#table1_filter'  }, null, null, null, null, null ]
+		});
+
+        jQuery('.magztertable1').dataTable({
+      "iDisplayLength": 10,
+      "bLengthChange": false
+    }).columnFilter({
+    	    sPlaceHolder: "head:after",
+			aoColumns: [ { type: "text", sSelector:'#table2_filter'  }, null, null, null, null, null ]
+		});
+});
+function show_error(tit, msg)
+{
+  jQuery.gritter.add({
+    title: tit,
+    text: msg,
+    class_name: 'growl-danger',
+    sticky: false,
+    time: '500'
+   });
+}
+    </script>
+    <style>
+        .r_loader {
+            display: none;
+            text-align: center;
+            margin: 10px auto;
+        }
+
+        .r2_loader {
+            text-align: center;
+            margin: 10px auto;
+        }
+    </style>
+
+
+
+
+
+
+    <!----- Date picker css for mac -->
+    <style type="text/css">
+        .ui-datepicker {
+            border: 1px solid rgb(201, 201, 201);
+            background-color: white;
+        }
+
+            .ui-datepicker th {
+                color: #000;
+            }
+
+            .ui-datepicker td a {
+                color: #525252;
+            }
+
+                .ui-datepicker td a:hover {
+                    background: #0072c6;
+                    color: #fff;
+                }
+
+            .ui-datepicker td.ui-datepicker-today a {
+                background: #1CAF9A;
+                color: white;
+            }
+
+            .ui-datepicker .ui-datepicker-next {
+                background-color: rgb(179, 179, 179);
+            }
+
+            .ui-datepicker .ui-datepicker-prev {
+                background-color: rgb(179, 179, 179);
+            }
+
+        .ui-datepicker-title {
+            color: #0072c6;
+        }
+
+        .ui-datepicker .ui-datepicker-header {
+            background-color: whitesmoke;
+        }
+    </style>
+    <!----- Date picker css for mac -->
+
+
+
+
+
+
+
+    <script type="text/javascript">
+function show_popup(){
+   alert("The export option is temporarily disabled. Please retry after some time. ");
+}
+function show_err_pop(){
+   alert("Please choose the dates within 3 months range to export the report.");
+}
+    </script>
+
+    <script type="text/javascript">
+var __lc = {};
+__lc.license = 6236161;
+
+__lc.visitor = {
+	name: "ABINASH",
+	email: "cont.abinashodisha@gmail.com"
+};
+
+(function() {
+ var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+ lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+})();
+    </script>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46680689-6', 'magzter.com');
+  ga('send', 'pageview');
+    </script>
+</body>
+</html>
