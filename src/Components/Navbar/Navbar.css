@@ -14,6 +14,7 @@ nav img{
 
 nav ul{
     display: flex;
+    align-items: center;
     padding: 10px;
     margin-right: 5rem;
 }
@@ -30,4 +31,14 @@ nav a.nav-links{
     text-decoration: none;
     font-weight:700;
     letter-spacing: 1px;
+}
+
+.login-btn .ant-btn{
+    color: #fff;
+    background: #eab308 !important ;
+}
+
+.login-btn .ant-btn:hover{
+    background: #f59e0b!important;
+
 }

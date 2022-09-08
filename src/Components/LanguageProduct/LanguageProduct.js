@@ -1,3 +1,4 @@
+import { Col, Row } from "antd";
 import React, { useState } from "react";
 import "./LanguageProduct.css";
 
@@ -71,6 +72,7 @@ const MultilingualIndicKeyboard = () => {
 
 function LanguageProduct() {
   const [tabContent, setTabContent] = useState(<AITranslation />);
+  const [isActive, setActive ] = useState("")
   return (
     <section className="language-product">
       <h2 className="Indian-language">
@@ -79,49 +81,66 @@ function LanguageProduct() {
       </h2>
 
       <div className="content">
-        <div className="tab">
-          <button
-            className="tablinks"
-            onClick={(e) => {
-              e.preventDefault();
-              setTabContent(<AITranslation />);
-            }}
-          >
-            AI-Powered Translation Management Hub
-          </button>
-          <button
-            className="tablinks"
-            onClick={(e) => {
-              e.preventDefault();
-              setTabContent(<IndianLangVoiceSuite />);
-            }}
-          >
-            Voice Suite for Indian Languages
-          </button>
-          <button className="tablinks"
-           onClick={(e) => {
-            e.preventDefault();
-            setTabContent(<ReverieNeuralMachTrans />);
-          }}
-          >
-            Reverie Neural Machine Translation
-          </button>
-          <button className="tablinks"
-           onClick={(e) => {
-            e.preventDefault();
-            setTabContent(<WebPublishManage />);
-          }}
-          >
-            Website Publishing and Management Platform
-          </button>
-          <button className="tablinks"
-           onClick={(e) => {
-            e.preventDefault();
-            setTabContent(<MultilingualIndicKeyboard />);
-          }}
-          >Multilingual Indic Keyboard</button>
-        </div>
-        <div>{tabContent}</div>
+        <Row>
+          <Col span={6}>
+            <div className="tab">
+              <button
+                className={isActive==="AITranslation"?"active-btn":"tablinks"}
+                onClick={(e) => {
+                  e.preventDefault();
+                  setTabContent(<AITranslation />);
+                  setActive("AITranslation")
+                }}
+              >
+                AI-Powered Translation Management Hub
+              </button>
+              <button
+                className={isActive==="IndianLangVoiceSuite"?"active-btn":"tablinks"}
+                onClick={(e) => {
+                  e.preventDefault();
+                  setTabContent(<IndianLangVoiceSuite />);
+                  setActive("IndianLangVoiceSuite")
+
+                }}
+              >
+                Voice Suite for Indian Languages
+              </button>
+              <button
+                className={isActive==="ReverieNeuralMachTrans"?"active-btn":"tablinks"}
+                onClick={(e) => {
+                  e.preventDefault();
+                  setTabContent(<ReverieNeuralMachTrans />);
+                  setActive("ReverieNeuralMachTrans")
+                }}
+              >
+                Reverie Neural Machine Translation
+              </button>
+              <button
+                className={isActive==="WebPublishManage"?"active-btn":"tablinks"}
+                onClick={(e) => {
+                  e.preventDefault();
+                  setTabContent(<WebPublishManage />);
+                  setActive("WebPublishManage")
+                }}
+              >
+                Website Publishing and Management Platform
+              </button>
+              <button
+                className={isActive==="MultilingualIndicKeyboard"?"active-btn":"tablinks"}
+                onClick={(e) => {
+                  e.preventDefault();
+                  setTabContent(<MultilingualIndicKeyboard />);
+                  setActive("MultilingualIndicKeyboard")
+                }}
+              >
+                Multilingual Indic Keyboard
+              </button>
+            </div>
+          </Col>
+          <Col span={18}>
+            <div>{tabContent}</div>
+          </Col>
+        </Row>
       </div>
     </section>
   );

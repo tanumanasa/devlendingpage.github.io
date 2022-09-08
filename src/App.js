@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "./logo.svg";
-import "./App.css";
 import "antd/dist/antd.css";
+import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
 import Hero from "./Components/Hero/Hero";
 import Footer from "./Components/Footer/Footer";
@@ -15,10 +15,10 @@ function App() {
   return (
     <div className="">
       <Hero/>
+      <CustomerStats/>
       <Languages/>
       <LanguageProduct/>  
       <Testimonials/>
-      <CustomerStats/>
       <SubFooter/>
       <Footer/>
     </div>

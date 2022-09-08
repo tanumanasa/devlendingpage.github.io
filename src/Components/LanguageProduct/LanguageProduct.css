@@ -7,11 +7,6 @@ section.language-product h2{
     text-align: center;
 }
 
-section.language-product div.content{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
 section.language-product div.content div.tab{
     display: flex;
     flex-direction: column;
@@ -32,11 +27,7 @@ section.language-product div.content div.tab button.tablinks{
     line-height: 1.5;
     height: 60px;
     cursor: pointer;
-}
-
-section.language-product div.content div.tab button.tablinks:active{
-    background-color: #c02179;
-    color: white;
+    transition: ease-in-out 0.3s;
 }
 
 section.language-product div.content h3{
@@ -45,4 +36,22 @@ section.language-product div.content h3{
 
 section.language-product div.content p{
     font-size: 1.2rem;
+}
+
+.active-btn{
+    background-color: #c02179;
+    color: white;
+    padding: 5px 45px;
+    width: 90%;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    font-weight: bold;
+    line-height: 1.5;
+    height: 60px;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
 }

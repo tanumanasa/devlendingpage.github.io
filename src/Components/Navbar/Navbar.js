@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar.css";
+import { Button } from "antd";
+import { LoginOutlined } from "@ant-design/icons";
 
 function Navbar() {
   const [colorChange, setColorchange] = useState(false);
@@ -41,6 +43,9 @@ function Navbar() {
             <a className="nav-links" href="#contactUs">
               Contact Us
             </a>
+          </li>
+          <li className="nav-items login-btn">
+            <Button size="large" icon={<LoginOutlined />}>Login</Button>
           </li>
         </ul>
       </nav>
