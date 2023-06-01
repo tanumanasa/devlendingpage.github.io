@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Thicccboi-Black";
+  src: url("./Fonts/THICCCBOI-Black.ttf");
+}
+@font-face {
+  font-family: "Thicccboi-Bold";
+  src: url("./Fonts/THICCCBOI-Bold.ttf");
+}
+@font-face {
+  font-family: "Thicccboi-Medium";
+  src: url("./Fonts/THICCCBOI-Medium.ttf");
+}
+@font-face {
+  font-family: "Thicccboi-Regular";
+  src: url("./Fonts/THICCCBOI-Regular.ttf");
+}
+
+body, a{
+  font-family: "Thicccboi-Regular";
+}
+
+h1, h2, h3, h3{
+  font-family: "Thicccboi-Bold";
+}
+
+p, li, button{
+  font-family: "Thicccboi-Medium";
+}

@@ -1,0 +1,32 @@
+section.customer-stats{
+    background: #f2f8fb;
+    padding: 2rem 4rem;
+}
+
+section.customer-stats div.card-collection{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+section.customer-stats .card{
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0rem 0.25rem 1.75rem rgb(30 34 40 / 7%);
+    border-radius: 0.4rem;
+}
+
+section.customer-stats .card h3{
+    font-size:2.05rem;
+    font-weight: 700;
+}
+
+section.customer-stats .card .icon-div{
+    padding: 1rem;
+    border-radius: 50%;
+    padding: 1rem 1.5rem;
+    margin-right: 1rem;
+}

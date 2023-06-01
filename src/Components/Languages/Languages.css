@@ -1,0 +1,44 @@
+section.languages{
+    background-color: #f2f8fb;
+    padding: 4rem;
+}
+
+section.languages .content{
+    padding: 2.5rem;
+    background: #fff;
+    box-shadow: 0 0 0 0.05rem rgb(8 60 130 / 6%), 0rem 0rem 1.25rem rgb(30 34 40 / 4%);
+}
+
+section.languages .content h2{
+    font-size: 1.2rem;
+    color: #c02179;
+}
+
+section.languages .content h3{
+    font-size: 2.1rem;
+}
+
+section.languages .content ul.language-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 1.4rem;
+    padding: 0;
+}
+
+section.languages .content ul.language-list li.list-item{
+    cursor: pointer;
+}
+
+section.languages .content p.accordion-content{
+    color:#262626;
+    letter-spacing: 0.51px;
+    font-family: "Thicccboi-Regular";
+    font-size: 1.1rem;
+    animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+section.languages .content ul.language-list li.list-item:hover{
+    color: #c02179;
+}
